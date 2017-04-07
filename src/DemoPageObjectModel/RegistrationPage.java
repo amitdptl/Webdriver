@@ -8,6 +8,8 @@ import org.openqa.selenium.By;
 public class RegistrationPage extends Utilis
 {
 
+    public static String email;
+
     public static void registrationPageFilling()
     {
         clickOnElement(By.xpath("//div/div/div/span[@class='male']"));
@@ -18,7 +20,9 @@ public class RegistrationPage extends Utilis
         selectIndex(By.name("DateOfBirthDay"),12);
         selectText(By.name("DateOfBirthMonth"),"April");
         selectValue(By.name("DateOfBirthYear"),"1982");
-        typeText(By.name("Email"),"abcde"+dateStamp()+"@gmail.com");
+        email="abcde"+dateStamp()+"@gmail.com";
+        typeText(By.name("Email"),email);
+
         typeText(By.id("Company"),"alibaba ltd");
         typeText(By.id("Password"),"abcd123");
         typeText(By.id("ConfirmPassword"),"abcd123");

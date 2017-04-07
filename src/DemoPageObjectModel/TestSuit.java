@@ -20,5 +20,17 @@ public class TestSuit extends Utilis
         RegistrationPage.logOut();
 
     }
+    @Test
+    public void userShouldAbleToLogInSucessfully()
+    {
+        HomePage.openUrl_demo_Nopcommerce();
+        HomePage.clickOnRegistration();
+        RegistrationPage.registrationPageFilling();
+        RegistrationPage.logOut();
+        HomePage.clickOnLogInPage();
+        LogInPage.logInPagefilling();
+
+
+    }
 
 }
