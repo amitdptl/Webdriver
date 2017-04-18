@@ -4,25 +4,23 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 
+
 /**
  * Created by amit on 02/04/2017.
  */
-public class TestSuit extends Utilis
-{
+public class TestSuit extends Utilis {
     @Test
-
-    public void userShouldAbleToRegisterSuccessfully()
-    {
+    public void userShouldAbleToRegisterSuccessfully() {
         HomePage.openUrl_demo_Nopcommerce();
         HomePage.clickOnRegistration();
         RegistrationPage.registrationPageFilling();
-        Assert.assertEquals("Your registration completed",getText(By.className("result")));
+        Assert.assertEquals("Your registration completed", getText(By.className("result")));
         RegistrationPage.logOut();
 
     }
+
     @Test
-    public void userShouldAbleToLogInSucessfully()
-    {
+    public void userShouldAbleToLogInSucessfully() {
         HomePage.openUrl_demo_Nopcommerce();
         HomePage.clickOnRegistration();
         RegistrationPage.registrationPageFilling();

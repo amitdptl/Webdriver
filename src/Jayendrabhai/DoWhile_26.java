@@ -17,7 +17,7 @@ public class DoWhile_26
             System.out.print(x+",");
             x--;
 
-        }while (x>=0);
+        }while (x>0);
 
     }
 }

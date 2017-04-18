@@ -15,6 +15,7 @@ public class Amazon
 {
     public static void main(String[] args)
     {
+
         WebDriver driver = new FirefoxDriver();
         driver.get("https://www.amazon.co.uk/");
         driver.manage().window().maximize();

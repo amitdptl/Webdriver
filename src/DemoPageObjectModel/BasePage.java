@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class BasePage
 {
-    public  static WebDriver driver=new FirefoxDriver();
+   static WebDriver driver=new FirefoxDriver();
 
     //Opem Browser Method
     public static void openBrowser(String url)
@@ -19,4 +19,6 @@ public class BasePage
         driver.manage().window().maximize();;
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
+
+
 }

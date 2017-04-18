@@ -55,12 +55,12 @@ public class ApparelClothing
        Assert.assertEquals(expectedText,actualText);
 
        //clicking on clear list
-        driver.findElement(By.xpath("//div[@class='center-2']/div/div[2]/a")).click();
+    //    driver.findElement(By.xpath("//div[@class='center-2']/div/div[2]/a")).click();
 
-        String expextedText="You have no items to compare.";
-        String actualText3=driver.findElement(By.xpath("//div[@class='center-2']/div/div[2]/div")).getText();
-        Assert.assertEquals(expectedText,actualText);
-        System.out.println("message asserted");
+//        String expextedText="You have no items to compare.";
+//        String actualText3=driver.findElement(By.xpath("//div[@class='center-2']/div/div[2]/div")).getText();
+//        Assert.assertEquals(expectedText,actualText);
+//        System.out.println("message asserted");
 
 
 

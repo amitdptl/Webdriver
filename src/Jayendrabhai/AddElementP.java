@@ -18,9 +18,17 @@ public class AddElementP
         for (int i = 0; i <a.length; i++)
         {
             a[i]=sc.nextInt();
+
+        }
+        System.out.print("Original array : ");
+
+        for (int i = 0; i <a.length ; i++)
+        {
+            System.out.print(a[i]+",");
         }
 
-        System.out.println("Original array"+a[i]);
+
+
 
     }
 }

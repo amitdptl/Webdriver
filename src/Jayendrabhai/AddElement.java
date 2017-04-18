@@ -2,6 +2,8 @@ package Jayendrabhai;
 
 import java.util.Scanner;
 
+import static Jayendrabhai.AddElementP.i;
+
 /**
  * Created by User on 05/03/2017.
  */
@@ -17,7 +19,9 @@ public class AddElement
         for(int i=0;i<x;i++)
         {
             a[i]=sc.nextInt();
+
         }
+        System.out.println(" "+a[i]);
         System.out.print("Enter the position where you want to insert elements :");
         pos=sc.nextInt();
         System.out.print("Enter the elements you want to insert :");
